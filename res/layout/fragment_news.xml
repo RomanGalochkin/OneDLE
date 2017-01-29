@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context="com.yoggo.dleandroidclient.MainActivity$PlaceholderFragment" >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/news_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.shppandroid1.app.MainActivity" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray"
+            tools:context="com.yoggo.dleandroidclient.MainActivity$PlaceholderFragment" >
+
+            <TextView
+                android:id="@+id/section_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <ListView
+                android:id="@+id/newsListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:divider="@null"
+                android:dividerHeight="0dp" >
+            </ListView>
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

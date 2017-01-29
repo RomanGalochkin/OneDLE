@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <View
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/orange"
+        android:textSize="30sp"
+        android:text="@string/app_name" />
+
+   <EditText
+        android:id="@+id/authorization_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:paddingTop="10dp"
+        android:singleLine="true"
+        android:text=""
+        android:hint="@string/login"
+        android:ems="10" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/authorization_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:text=""
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/authorization_site_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:singleLine="true"
+        android:hint="@string/site_address"
+        
+        android:padding="20dp" />
+        <!--  android:text="http://avegames.ru/104/utf"-->
+        
+
+    <Button
+        android:id="@+id/authorization_log_in_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_dle"
+        
+        android:text="@string/log_in_button" />
+    
+        <View
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+</LinearLayout>
